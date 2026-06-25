@@ -1,58 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of ANAS LACHHAB, showcasing projects and skills.">
-  <title>ANAS LACHHAB | Portfolio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anas Lachhab — Logistics & Supply Chain Graduate. Portfolio." />
+  <title>Anas Lachhab — Logistics & Supply Chain</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icons (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>ANAS LACHHAB</h1>
-    <nav>
+  <!-- Ambient gradient blobs -->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob--blue"></span>
+    <span class="blob blob--indigo"></span>
+    <span class="blob blob--teal"></span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav glass">
+    <a href="#home" class="nav__logo">AL<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="assets/cv.pdf" class="btn btn--primary nav__cta" download>
+      <i data-lucide="download"></i> CV
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <i data-lucide="menu"></i>
+    </button>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a Logistics and Industrial Engineering student passionate about efficient systems, project management, and data-driven solutions. With experience in event coordination and technical projects, I enjoy turning ideas into structured, impactful outcomes.</p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <span class="eyebrow">
+          <span class="dot"></span> Available for opportunities
+        </span>
+        <h1 class="display">
+          Anas <br />Lachhab<span class="accent">.</span>
+        </h1>
+        <p class="hero__title">Industrial and Logistics engineer</p>
+        <p class="hero__pitch">
+          Transforming data into operational excellence and supply chain efficiency.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">
+            View projects <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero__card glass">
+        <img src="assets/img/photo.jpg" alt="Anas Lachhab" class="avatar" />
+        <div class="hero__meta">
+          <div>
+            <span class="meta__label">Based in</span>
+            <span class="meta__value">Settat, MA</span>
+          </div>
+          <div>
+            <span class="meta__label">Field</span>
+            <span class="meta__value">Logistics & Supply Chain</span>
+          </div>
+          <div>
+            <span class="meta__label">Status</span>
+            <span class="meta__value status">
+              <span class="dot dot--green"></span> Open to work
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Route signature -->
+    <svg class="route" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 80 Q 300 10, 600 60 T 1200 40" />
+    </svg>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project">
-        <img src="images/project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>Description of your first project. <a href="https://example.com" target="_blank">View Project</a></p>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <span class="section__tag">About</span>
+    <h2 class="section__title">A short story.</h2>
+    <div class="about">
+      <div class="about__photo glass">
+        <div class="avatar-wrap">
+          <img src="assets/img/shortstorypic.jpg" alt="Anas Lachhab" class="avatar avatar--lg" />
+        </div>
       </div>
-      <div class="project">
-        <img src="images/project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Description of your second project. <a href="https://example.com" target="_blank">View Project</a></p>
-      </div>
-      <div class="project">
-        <img src="images/project3.jpg" alt="Project 3">
-        <h3>Project 3</h3>
-        <p>Description of your third project. <a href="https://example.com" target="_blank">View Project</a></p>
+      <div class="about__text">
+        <p>
+          I’ve always believed that engineering is a dance between logic and life.
+          My journey started with a fascination for PCs and mechanical gears,
+          taking me from Errachidia to Settat.
+          But along the way, I discovered that the most complex and beautiful systems aren't made of metal, <em> they’re made of people </em>.
+        </p>
+        <p>
+           As an Industrial and Logistics Engineer, I live in the sweet spot where precise science meets collaborative management. 
+           I don’t just optimize workflows; I build the teams that drive them forward.
+        </p>
+        <div class="stats">
+          <div class="stat glass">
+            <span class="stat__num">2026</span>
+            <span class="stat__label">Graduated</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num">3</span>
+            <span class="stat__label">Languages</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num">4+</span>
+            <span class="stat__label">Case studies</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:anaslachhab1007@gmail.com">anaslachhab1007@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/anas-lachhab-06012619a/" target="_blank">ANAS LACHHAB</a></p>
-    <p>GitHub: <a href="https://github.com/anaslxhb" target="_blank">github.com/anaslxhb</a></p>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <span class="section__tag">Skills</span>
+    <h2 class="section__title">What I work with.</h2>
+    <div class="grid grid--3">
+      <article class="card glass">
+        <i data-lucide="boxes" class="card__icon"></i>
+        <h3>Logistics Tools</h3>
+        <ul>
+          <li>SAP</li>
+          <li>Odoo</li>
+          <li>WMS & TMS systems</li>
+          <li>Incoterms 2020</li>
+        </ul>
+      </article>
+      <article class="card glass">
+        <i data-lucide="bar-chart-3" class="card__icon"></i>
+        <h3>Analysis</h3>
+        <ul>
+          <li>Excel (advanced, VBA)</li>
+          <li>Power BI</li>
+          <li>SQL</li>
+          <li>Python</li>
+        </ul>
+      </article>
+      <article class="card glass">
+        <i data-lucide="users" class="card__icon"></i>
+        <h3>Methods & Soft</h3>
+        <ul>
+          <li>Lean Six Sigma</li>
+          <li>Negotiation</li>
+          <li>French · English · Arabic</li>
+          <li>Project management</li>
+        </ul>
+      </article>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 ANAS LACHHAB. All rights reserved.</p>
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <span class="section__tag">Education</span>
+    <h2 class="section__title">Academic path.</h2>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card glass">
+          <span class="timeline__date">2023 — 2025</span>
+          <h3>Engineer degree — Industrial and logistics engineering</h3>
+          <p class="muted">Faculty of Sciences and technologies · Settat</p>
+          <p>
+            Lorem ipsum dolor sit amet. Coursework: transportation
+            optimization, inventory modeling, procurement, lean operations.
+          </p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card glass">
+          <span class="timeline__date">2021 — 2023</span>
+          <h3>DEUST - Electrical and Mechanical Engineering</h3>
+          <p class="muted">Faculty of Sciences and technologies · Settat</p>
+          <p>
+            Lorem ipsum dolor sit amet. Coursework: transportation
+            optimization, inventory modeling, procurement, lean operations.
+          </p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card glass">
+          <span class="timeline__date">2020 — 2021</span>
+          <h3>Baccalaureat in Mechanical sciences and technologies</h3>
+          <p class="muted">Technical Highschool · Laayoune</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Foundations
+            in operations, statistics, and international trade.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <span class="section__tag">Case studies</span>
+    <h2 class="section__title">Selected projects.</h2>
+    <div class="grid grid--2">
+      <article class="project glass">
+        <div class="project__cover cover--1"></div>
+        <div class="project__body">
+          <div class="chips">
+            <span class="chip">Excel</span><span class="chip">Power BI</span>
+          </div>
+          <h3>Warehouse Layout Optimization</h3>
+          <p>
+            Lorem ipsum dolor sit amet — analyzed picking paths and proposed a
+            new ABC zoning, cutting travel distance by 22%.
+          </p>
+          <a href="#" class="link">Read case study <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project__cover cover--2"></div>
+        <div class="project__body">
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">SQL</span>
+          </div>
+          <h3>Last-Mile Delivery Routing</h3>
+          <p>
+            Lorem ipsum — built a clustering model to group orders and reduce
+            average delivery time by 17% across 4 zones.
+          </p>
+          <a href="#" class="link">Read case study <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project__cover cover--3"></div>
+        <div class="project__body">
+          <div class="chips">
+            <span class="chip">SAP</span><span class="chip">Lean</span>
+          </div>
+          <h3>Procurement Process Redesign</h3>
+          <p>
+            Lorem ipsum — mapped the AS-IS, removed 3 bottlenecks, brought
+            lead-time from 14 to 9 days.
+          </p>
+          <a href="#" class="link">Read case study <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project__cover cover--4"></div>
+        <div class="project__body">
+          <div class="chips">
+            <span class="chip">Inventory</span><span class="chip">Forecast</span>
+          </div>
+          <h3>Inventory Forecasting Model</h3>
+          <p>
+            Lorem ipsum — implemented a moving-average + safety-stock model,
+            reduced stockouts by 31% on a 120-SKU portfolio.
+          </p>
+          <a href="#" class="link">Read case study <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <span class="section__tag">Experience</span>
+    <h2 class="section__title">Where I've worked.</h2>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card timeline__card--with-logo glass">
+          <div class="timeline__content">
+            <span class="timeline__date">Febuary - Augest 2026</span>
+            <h3>Logistics Analyst Intern — DACHSER</h3>
+            <p class="muted">Mohammedia · 6 months</p>
+            <p>Currently serving as a Graduation Project Intern within the Contract Logistics department at DACHSER, 
+              I am leading a comprehensive Business Process Reengineering (BPR) initiative. I successfully restructured an 
+              obsolete client account model across operational, physical, and contractual dimensions, directly restoring its profitability. 
+              My role also involves end-to-end warehouse design and 3PL service quotation, leveraging a deep mastery of technical data such 
+              as zoning, dimensioning, and capacity planning—alongside financial billing metrics. 
+              Additionally, I utilize BPMN mapping to standardize core logistics workflows, 
+              including picking, kitting, and shipping, to ensure long-term operational excellence</p>
+          </div>
+          <div class="app-icon">
+            <img src="assets/img/dachser.png" alt="DACHSER" />
+          </div>
+        </div>
+      </li>
+
+
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card timeline__card--with-logo glass">
+          <div class="timeline__content">
+            <span class="timeline__date">Summer 2025</span>
+            <h3>Continuous Improvement Intern — ROCA</h3>
+            <p class="muted">Settat · 2.5 months</p>
+            <p>
+              At ROCA, I served as a Continuous Improvement Intern in the Production Department, driving process optimization and performance management. 
+              I utilized Value Stream Mapping (VSM) to eliminate operational waste and identify the root causes of quality non-conformities. 
+              To enhance data-driven decision-making, I designed an Overall Equipment Effectiveness (OEE/TRS) dashboard tracking availability, 
+              rate, and quality, which effectively optimized production capacities. Additikonally, I implemented the SCOR model to standardize 
+              cross-functional supply chain flows, 
+              successfully aligning manufacturing schedules with commercial demand.
+            </p>
+          </div>
+          <div class="app-icon">
+            <img src="assets/img/roca.png" alt="ROCA" />
+          </div>
+        </div>
+      </li>
+
+
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+          <div class="timeline__card timeline__card--with-logo glass">
+            <div class="timeline__content">
+              <span class="timeline__date">Summer 2024</span>
+              <h3>Summer Intern — CIMAT</h3>
+              <p class="muted">Beni Mellal · 1 months</p>
+              <p>
+                During my technical internship at CIMAT, I conducted an in-depth analysis of the cement production value chain 
+                and maintenance workflows. This operational immersion provided the critical process understanding required 
+                to successfully digitalize stock tracking for the AFRs zone. Leveraging these insights,
+                I developed a customized Excel/VBA management dashboard that streamlined data collection and significantly enhanced 
+                real-time operational visibility.
+              </p>
+            </div>
+            <div class="app-icon">
+              <img src="assets/img/cimat.png" alt="CIMAT" />
+            </div>
+        </div>  
+      </li>
+    </ol>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certs">
+    <span class="section__tag">Certifications</span>
+    <h2 class="section__title">Credentials.</h2>
+    <div class="badges">
+      <span class="badge glass"><i data-lucide="award"></i> Google Project Management</span>
+      <span class="badge glass"><i data-lucide="award"></i> Lean Six Sigma — Yellow Belt</span>
+      <span class="badge glass"><i data-lucide="award"></i> SAP MM Fundamentals</span>
+      <span class="badge glass"><i data-lucide="award"></i> Power BI — Microsoft</span>
+      <span class="badge glass"><i data-lucide="award"></i> Incoterms 2020</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="contact glass">
+      <span class="section__tag">Contact</span>
+      <h2 class="section__title">Let's talk.</h2>
+      <p class="muted">
+        Open to junior roles, freelance opportunities and collaborations in
+        logistics and supply chain.
+      </p>
+      <div class="contact__links">
+        <a href="mailto:anaslachhab1007@gmail.com" class="btn btn--primary">
+          <i data-lucide="mail"></i> anaslachhab1007@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/your-username" class="btn btn--ghost" target="_blank">
+          <img src="assets/img/linkedIn.jpg" alt="" class="btn__icon" /> LinkedIn
+        </a>
+        <a href="assets/cv.pdf" class="btn btn--ghost" download>
+          <i data-lucide="download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Anas Lachhab — Presence, Prime and Prosperity.</p>
   </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
